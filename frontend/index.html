@@ -1,0 +1,38 @@
+<html>
+    <head>
+    <title>Example using FileUpload object </title>
+    </head>
+    <body>
+    <script language="JavaScript">
+    
+    function showname(){
+        var  file = document.form1.uploadBox.value ;
+        //document.form1.filename.value = file ;
+        document.getElementById("fname").value = file;
+//    var xhttp = new XMLHttpRequest();
+//    xhttp.open("POST", "http://localhost/citi project file/", true);
+//    xhttp.setRequestHeader("file", "application/json");
+//    xhttp.send();
+//    var response = JSON.parse(xhttp.responseText);
+    }
+    
+    </script>
+    <form name="form1">
+    Click on browse to choose a file to send.
+    <br>
+    Click on the Send button to see the full path for the file sent.
+    <br><br>
+    File to send: <input type="file" name="uploadBox">
+    <br><br>
+    <input type="button" value="Send" name="get" onClick='showname()'>
+    <br><br>
+    <input type="text" name="filename" id="fname" size="40">
+<!--    <a class="btn btn-primary" href="https://docs.google.com/uc?id=0B0jH18Lft7ypSmRjdWg1c082Y2M" download id="download">BUTTON</a>-->
+    
+    </form>
+    <BR>
+    <a href="excel/template.pdf" download> file_name </a>
+    
+    
+    </body>
+    </html>
